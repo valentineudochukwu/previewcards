@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Outfit', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+.cards{
+    min-height: 400px;
+    display: flex;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.sedans-card{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 30px;
+    background-color: hsl(31, 77%, 52%);
+}
+.suv-card{
+    padding: 30px;
+    background-color: hsl(184, 100%, 22%);
+}
+.luxury-card{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 30px;
+    background-color:hsl(179, 100%, 13%);
+}
+.sedan-btn button{
+    color:hsl(31, 77%, 52%) ;
+    margin-top: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+}
+.suv-btn button{
+    color: hsl(184, 100%, 22%) ;
+    margin-top: 45%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+}
+.luxury-btn button{
+    color: hsl(179, 100%, 13%);
+    margin-top: 45%;
+    padding: 10px;
+    border: none;
+    background-color:white ;
+    border-radius: 20px;
+}
+.sedan-btn button:hover{
+    background-color: transparent;
+    color: hsla(0, 0%, 100%, 0.75);
+    cursor: pointer;
+    border:2px solid hsla(0, 0%, 100%, 0.75);
+}
+.suv-btn button:hover{
+    background-color: transparent;
+    color: hsla(0, 0%, 100%, 0.75);
+    cursor: pointer;
+    border:2px solid hsla(0, 0%, 100%, 0.75);
+}
+.luxury-btn button:hover{
+    background-color: transparent;
+    color: hsla(0, 0%, 100%, 0.75);
+    cursor: pointer;
+    border: 2px solid hsla(0, 0%, 100%, 0.75);
+}
+
+
+@media screen and (max-width: 375px){
+.cards{
+    display: inline-block;
+}
+.sedans-card{
+    border-bottom-left-radius: unset;
+    border-top-right-radius: 15px;
+}
+.luxury-card{
+    border-top-right-radius: unset;
+    border-bottom-left-radius: 15px;
+}
+
+}
